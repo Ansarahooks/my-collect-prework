@@ -1,9 +1,9 @@
 def my_collect(array)
   i = 0
-  modified_array = []
+  new_array = []
   while i < array.size
-    block_given?
-    modified_array << yield(array[i])
+    new_array << yield(array[i])
+    i += 1
   end
-modified_array
+new_array
 end
